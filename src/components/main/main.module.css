@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+
+.navbar{
+  position: fixed;
+  z-index: 9999;
+    padding: 5px;
+    background-color: #fff;
+    width:100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 1px 5px rgb(86, 80, 80);
+}
+
+
+
+
+.searchbox {
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  border: 0;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius: 44px;
+  box-shadow: 0 0px 2px black,0 -0px 2px black;
+  display: flex;
+ 
+  align-items: center;
+}
+
+.searchbox:hover {
+  transform: scale(1.005);
+}
+
+.search {
+ 
+  font-size: 1em;
+  border: 0;
+  outline: none;
+  padding-left: 14px;
+  height: 100%;
+  width: 100%;
+}
+
+.searchicon {
+   
+  cursor: pointer;
+  color: rgb(119, 119, 255);
+}
+
+.searchhint {
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+
+  margin: 0 5%;
+  overflow-y: auto;
+  gap: 3px;
+  position: relative;
+  padding: 0 25px;
+  top: 0.4%;
+  box-shadow: 0px 0.5px 0px black;
+  max-height: 250px;
+  background-color: rgb(255, 255, 255);
+}
+
+.boxaline {
+  position: relative;
+  z-index: 999;
+  height: 45vh;
+  width: 50vw;
+ padding-top: 6px;
+ 
+}
+
+.hinttext {
+  cursor: pointer;
+  width: 100%;
+}
+.sideoption{
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+}
+.side{
+    text-shadow: 0.5px 0.5px 0.4px black;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.side:hover{
+    border-bottom: 4px solid transparent;
+}
+@media (max-width:570px){
+  .navbar{
+   padding: 5px;
+   justify-content: center;
+   gap: 10px;
+      
+  }
+}
+@media (max-width:530px){
+  .sideoption{
+    display: none;
+  }
+  .boxaline{
+    width: 90vw;
+  }
+
+}

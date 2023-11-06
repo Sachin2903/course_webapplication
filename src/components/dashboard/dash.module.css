@@ -1,0 +1,200 @@
+.dashBox{  
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 90px 35px 35px 35px;
+}
+.sidelist{
+    top:90px;
+    padding-top: 10px;
+    position: sticky;
+    height: fit-content;
+    width: 25%;
+    list-style-type:none;
+
+
+}
+.sidelistli{
+
+    padding-bottom: 10px;
+   border-bottom: 0.6px solid black;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.MaindashBox{
+    position: relative;
+    padding: 30px;
+    width: 100vw;
+    
+    display: flex;
+    justify-content:space-between;
+
+
+}
+.numberFind{
+    width: 90%;
+    text-align: left;
+    padding: 5px;
+    font-style: italic;
+    font-family: monospace;
+
+}
+.courseBox{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+   gap: 15px;
+    width: 60vw;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 0px 1px 2px black;
+}
+.clickDiv{
+   cursor: pointer;
+    width: 25%;
+    background-color: white;
+    z-index: 3;
+    top: 70%;
+    right: 25%;
+    height: 17%;
+    box-shadow: 0px 0px 1px black;
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.buyp{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.1em;
+    height: 100%;
+    border:0;
+    background-color:rgb(230, 0, 255);
+}
+.heart{
+    margin-right: 10%;
+    color: red;
+}
+.heart:hover{
+    transform: scale(1.1);
+}
+.courseBox:hover{
+    transform: scale(1.02);
+}
+
+
+.courseImg{
+    width: 240px;
+    align-self: center;
+    height: 160px;
+}
+.courseContent{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 5px 5px 5px 9px;
+    width: 90%;
+    height: 100%;
+    overflow-y: scroll;
+    
+}
+.h4{
+    font-size: 1.2em;
+    margin-bottom: 7px;
+    /* border:1px solid red; */
+    letter-spacing: 1.5px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.p1{
+    font-size: 0.9em;
+}
+.p2{
+    font-size: 1em;
+}
+.p4{
+    font-size: 1em;
+
+    font-family: monospace;
+}
+.list{
+    font-size: 0.8em;
+    width: fit-content;
+    list-style-type:disc;
+    list-style-position: inside;
+   display: flex;
+   gap: 5px;
+}
+.listli{
+    margin: 0;
+    padding-left: 10px;
+    width: fit-content;
+
+}
+.btn{
+    border:0;
+    padding: 4px;
+    box-shadow: 0px 0px 1px black;
+    letter-spacing: 1.1px;
+    background-color: rgb(73, 246, 188);
+    font-size: 0.9em;
+    font-family: monospace;
+    font-weight:bold;
+
+}
+
+@media (max-width:690px) {
+    .sidelist{
+        display: none;
+    }
+    .MaindashBox{
+       
+        position: relative;
+        padding: 80px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    
+    
+    }
+    .dashBox{ 
+        width: 100%;
+        padding: 90px 0px 35px 0px;
+    }
+    .courseContent{
+        width: 100%;
+        font-size: 12.5px;
+
+    }
+    .courseBox{
+        width: 96%;
+    }
+}
+@media (max-width:570px) {
+    .courseImg{
+        width: 190px;
+        height: 100px;
+    }
+    .courseContent{
+       
+        font-size: 10px;
+
+    }
+}
