@@ -1,3 +1,226 @@
 .desBox{
-    padding-top: 90px;
+    padding: 90px 30px 30px 30px;
+    border:5px solid red;
+    min-height: 150vh;
+}
+.courseBox{ 
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 90px;
+    padding-right: 25px;
+    background-color:#2d2f31;
+    box-shadow: 0px 1px 2px black;
+}
+.Preview{
+    align-self: center;
+    flex-shrink: 0;
+    bottom: -80%;
+    left:20px;
+    width: 325px;
+    position: relative;
+}
+.playIcon{
+    color: black;
+    background-color: white;
+    border-radius: 44px;
+    box-shadow: 0px 0px 5px black;
+}
+.play{
+    backdrop-filter: blur(2px);
+    position: absolute;
+   top: 0;
+
+    font-size: 6em;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+}
+.playp{
+    background-color: rgb(0, 0, 0);
+    font-size: 0.15em;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: bold;
+
+
+}
+
+.courseImg{
+    
+    width: 100%;
+    align-self: center;
+    height: 60%;
+}
+.buyp{
+  
+    cursor: pointer;
+    width:100%;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 24, 179);
+    height:45px;
+
+}
+.heart{
+    cursor: pointer;
+   font-size: 1.5em;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    color: red
+}
+.heart:hover{
+    transform: scale(1.1);
+}
+.heartless:hover{
+    transform: scale(1.1);
+}
+.enroll{
+    background-color: rgb(63, 242, 111);
+    width: fit-content;
+    padding: 7px;
+  
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.8em;
+    color: black;
+}
+.reqlist{
+  
+    font-size: 30px;
+    font-weight: bold;
+    margin:30px;
+    border-bottom: 3px solid black;;
+
+}
+.reqlistname{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px;
+
+
+}
+.heartless{
+    cursor: pointer;
+    font-size: 1.5em;
+    color: rgb(204, 198, 198);
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.courseContent{
+   
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 25px;
+    width: 100%;
+}
+.h4{
+    font-size: 1.4em;
+    margin-bottom: 7px;
+    letter-spacing: 1.6px;
+}
+.p1{
+    line-height: 55px;
+    font-size: 1em;
+}
+.p2{
+    line-height: 35px;
+    font-size: 1em;
+}
+.p4{
+    font-size: 1em;
+    line-height: 55px;
+    font-family: monospace;
+}
+.list{
+    font-size: 0.8em;
+    width: fit-content;
+    list-style-type:disc;
+    list-style-position: inside;
+   display: flex;
+   gap: 5px;
+}
+.listli{
+    margin: 0;
+    padding-left: 10px;
+    width: fit-content;
+
+}
+.contentDiv{
+    margin:32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:12px;
+    padding: 15px;
+  box-shadow: 1px 1px 1px black;
+
+}
+
+.btn{
+    border:0;
+    padding: 4px;
+    box-shadow: 0px 0px 1px black;
+    letter-spacing: 1.1px;
+    background-color: rgb(73, 246, 188);
+    font-size: 0.9em;
+    font-family: monospace;
+    font-weight:bold;
+float: right;
+margin-top: 25px;
+}
+
+@media (max-width:720px) {
+
+    .courseContent{
+        width: 100%;
+        font-size: 12.5px;
+
+    }
+    .Preview{
+        width: 200px;
+    }
+    .courseBox{
+        padding-bottom: 20px;
+        width: 96%;
+    }
+    .playIcon{
+        font-size: 0.6em;
+    }
+    .playp{
+        font-size: 0.12em;
+    }
+}
+@media (max-width:570px) {
+    .courseImg{
+        width: 150px;
+        
+    }
+    .playicon{
+        font-size: 0.1em;
+    }
+    .courseContent{
+       
+        font-size: 10px;
+
+    }
 }

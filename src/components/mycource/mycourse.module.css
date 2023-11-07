@@ -1,15 +1,55 @@
 .dashBox{  
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 40px;
     width: 100%;
-    padding: 0px 35px 35px 35px;
+    padding: 90px 35px 35px 35px;
+}
+.lastdate{
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 0.9em;
+
+}
+.complete,.completegreen{
+    box-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    font-size: 1.4em;
+    position: absolute;
+    top:5px;
+    right:5px;
+}
+.completegreen{
+    background-color: aquamarine;
+}
+.complete:hover{
+    transform: scale(0.96);
+}
+.processBarComplete{
+    padding: 3px;
+    background-color: rgb(90, 245, 90);
+
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold
+}
+.processBar{
+   padding: 3px;
+    background-color: rgb(245, 240, 90);
+
+    width: 5%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold
+
+}
+.heartless:hover{
+    transform: scale(1.1);
 }
 .sidelist{
-    
     top:90px;
     padding-top: 10px;
     position: sticky;
@@ -35,10 +75,11 @@
 .MaindashBox{
     position: relative;
     padding: 30px;
-    width: 100vw;
     padding-top: 90px;
-    
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
+    border:1px solid red;
     justify-content:space-between;
 
 
@@ -52,7 +93,6 @@
 
 }
 .courseBox{
-    
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -63,18 +103,32 @@
     padding-right: 25px;
     box-shadow: 0px 1px 2px black;
 }
+.clickDiv{
+   cursor: pointer;
+    width: 25%;
+    background-color: white;
+    z-index: 3;
+    top: 70%;
+    right: 25%;
+    height: 17%;
+    box-shadow: 0px 0px 1px black;
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
 .buyp{
     right: 10px;
     top: 10px;
     position: absolute;
     cursor: pointer;
-    width:28px;
+    width:36px;
     padding: 5px;
     border-radius: 44px;
   box-shadow: 1px 1px 1px black,-1px -1px 1px black;
     font-family: monospace;
     font-size: 1.1em;
-    height:25px;
+    height:32px;
 
 }
 .buyp:hover{
@@ -89,9 +143,6 @@
     color: red
 }
 .heart:hover{
-    transform: scale(1.1);
-}
-.heartless:hover{
     transform: scale(1.1);
 }
 .heartless{
@@ -192,6 +243,13 @@
     .courseBox{
         width: 96%;
     }
+}
+.noCourse{
+    width: 100vw;
+
+    height: fit-content;
+    text-align: center;
+   
 }
 @media (max-width:570px) {
     .courseImg{
